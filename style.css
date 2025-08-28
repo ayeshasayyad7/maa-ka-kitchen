@@ -1,0 +1,124 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #ff914d;
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  margin: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff914d;
+}
+
+/* Section */
+section {
+  padding: 40px 20px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #ff914d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border: 4px solid #ff914d;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Area Select */
+#areaSelect, #areaInput {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff914d;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Pricing Section */
+#pricing ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#pricing li {
+  background-color: #fff1e0;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  width: 300px;
+  font-weight: bold;
+  border: 2px solid #ff914d;
+  text-align: left;
+}
+
+#pricing ul ul li {
+  background-color: #ffe5d1;
+  width: 280px;
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+#pricing {
+  text-align: center; /* centers the whole pricing section */
+}
+
+.sub-list {
+  list-style-type: disc; 
+  padding-left: 20px;
+  margin: 10px auto; 
+  text-align: left;
+  display: block;
+}
+
+.pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

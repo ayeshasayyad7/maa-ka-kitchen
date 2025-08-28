@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maa Ka Kitchen</title>
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>Maa Ka Kitchen 🍲</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to Maa Ka Kitchen</h1>
+    <p>For students & employees living far from home – enjoy Ghar ka Khana filled with Maa ka pyaar ❤️</p>
+    <a href="https://wa.me/9145654136" class="btn">Join Now on WhatsApp</a>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Food Gallery</h2>
+    <div class="gallery">
+      <img src="images/food1.jpg" alt="Food1">
+      <img src="images/food2.jpg" alt="Food2">
+      <img src="images/food3.jpg" alt="Food3">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Maa Ka Kitchen</h2>
+    <p>Started with love to serve homely food to those who miss Maa’s cooking.  
+       Healthy, simple, and made with care – just like home. 🍛</p>
+
+  
+  <p>At Maa Ka Kitchen, we prepare every tiffin with 
+    <strong>fresh, high-quality ingredients</strong> and <strong>pure vegetables
+
+    </strong>. Each meal is made with love and care, ensuring you get the <strong>
+        homely taste</strong> you miss. Our recipes are simple, healthy, and perfect for 
+        students and employees who want <strong>fresh, hygienic food every day</strong>.</p>
+</section>
+
+
+
+    
+<section id="pricing">
+  <h2>Our Tiffin Prices & Menu</h2>
+  <p>We prepare fresh, homely meals every day with high-quality ingredients and pure vegetables.</p>
+  <ul>
+    <li>Monthly Tiffin: ₹2500</li>
+    <li>Veg & Non-Veg Schedule:</li>
+      <ul class="sub-list">
+        <li>Monday, Tuesday, Thursday, Friday: Vegetarian</li>
+        <li>Wednesday & Saturday: Non-Veg (Chicken)</li>
+      </ul>
+    <li>Optional Sunday Tiffin: ₹2600 (extra ₹100)</li>
+  </ul>
+  <p>All meals are hygienically prepared with love, just like home! 🍛🥦🍗</p>
+</section>
+
+
+
+
+
+  <section id="delivery">
+    <h2>Check Delivery Area</h2>
+    <p>Select your area to see if we deliver:</p>
+    <select id="areaSelect">
+      <option value="">--Choose your area--</option>
+      <option value="Shivaji Chowk">Shivaji Chowk</option>
+      <option value="College Area">College Area</option>
+      <option value="Office Area">Office Area</option>
+    </select>
+    <p id="selectedArea" style="margin-top:10px; font-weight:bold;"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91-9145654136</p>
+    <p>📧 Email: maakakitchen@example.com</p>
+    <p>📍 Address:somwar peth,kolhapur Maharashtra</p>
+    <a href="https://wa.me/9145654136" class="btn">Message on WhatsApp</a>
+  </section>
+
+  <footer>
+    © 2025 Maa Ka Kitchen | Made with ❤️ for Students & Employees
+  </footer>
+
+  <script>
+    const select = document.getElementById('areaSelect');
+    const display = document.getElementById('selectedArea');
+
+    select.addEventListener('change', () => {
+      if(select.value){
+        display.textContent = "Delivery available in: " + select.value;
+      } else {
+        display.textContent = "";
+      }
+    });
+  </script>
+
+</body>
+</html>
